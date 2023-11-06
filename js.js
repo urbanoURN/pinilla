@@ -1,31 +1,25 @@
-function sumar() {
+function realizarOperacion(operacion) {
     var numero1 = parseFloat(document.getElementById("numero1").value);
     var numero2 = parseFloat(document.getElementById("numero2").value);
-    var resultado = numero1 + numero2;
-    document.getElementById("resultado").textContent = resultado;
-}
+    var resultadoSpan = document.getElementById("resultado");
 
-function restar() {
-    var numero1 = parseFloat(document.getElementById("numero1").value);
-    var numero2 = parseFloat(document.getElementById("numero2").value);
-    var resultado = numero1 - numero2;
-    document.getElementById("resultado").textContent = resultado;
-}
+    if (!isNaN(numero1) && !isNaN(numero2)) {
+        var resultado;
+        if (operacion === 'sumar') {
+            resultado = numero1 + numero2;
+        } else if (operacion === 'restar') {
+            resultado = numero1 - numero2;
+        } else if (operacion === 'multiplicar') {
+            resultado = numero1 * numero2;
+        } else if (operacion === 'dividir' && numero2 !== 0) {
+            resultado = numero1 / numero2;
+        } else {
+            resultadoSpan.textContent = "Error: Operación no válida o división por cero.";
+            return;
+        }
 
-function multiplicar() {
-    var numero1 = parseFloat(document.getElementById("numero1").value);
-    var numero2 = parseFloat(document.getElementById("numero2").value);
-    var resultado = numero1 * numero2;
-    document.getElementById("resultado").textContent = resultado;
-}
-
-function dividir() {
-    var numero1 = parseFloat(document.getElementById("numero1").value);
-    var numero2 = parseFloat(document.getElementById("numero2").value);
-    if (numero2 !== 0) {
-        var resultado = numero1 / numero2;
-        document.getElementById("resultado").textContent = resultado;
+        resultadoSpan.textContent = "Resultado: " + resultado;
     } else {
-        document.getElementById("resultado").textContent = "Error: División por cero.";
+        resultadoSpan.textContent = "Error: Dígitos inválidos";
     }
 }

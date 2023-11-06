@@ -19,10 +19,10 @@
                 <h3>+</h3>
                 <input type="number" name="numero2" id="numero2" required tabindex="2" pattern="[0-9]{}">
             
-                <button onclick="sumar()">Sumar</button>
-                <button onclick="restar()">Restar</button>
-                <button onclick="multiplicar()">Multiplicar</button>
-                <button onclick="dividir()">Dividir</button>
+                <button type="button" onclick="realizarOperacion('sumar')">Sumar</button>
+                <button type="button" onclick="realizarOperacion('restar')">Restar</button>
+                <button type="button" onclick="realizarOperacion('multiplicar')">Multiplicar</button>
+                <button type="button" onclick="realizarOperacion('dividir')">Dividir</button>
 
 
                 <p>Resultado: <span id="resultado"></span></p>
