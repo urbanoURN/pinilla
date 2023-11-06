@@ -1,0 +1,55 @@
+body {
+    background-color: #e0f2e9; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#cuerpo_suma {
+    background-color: #c4e9c2; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+h3 {
+    color: #258246; 
+}
+
+.bloque {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #258246; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button#botoncal {
+    background-color: #258246; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#botoncal:hover {
+    background-color: #cd104c; 
+}
+p {
+    margin-top: 10px;
+}
+
+#valor {
+    color: #258246; 
+}
+
