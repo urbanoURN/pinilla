@@ -1,22 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const num1 = document.getElementById("numero1");
-    const num2 = document.getElementById("numero2");
-    const botoncal = document.getElementById("botoncal");
-    const valorsuma = document.getElementById("valor");
+function sumar() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var resultado = num1 + num2;
+    document.getElementById("resultado").textContent = resultado;
+}
 
-    botoncal.addEventListener("click", function(){
-        event.preventDefault();
-        const numero1 = parseFloat(num1.value);
-        const numero2 = parseFloat(num2.value);
+function restar() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var resultado = num1 - num2;
+    document.getElementById("resultado").textContent = resultado;
+}
 
-        if (!isNaN(numero1) && !isNaN(numero2)) {
-            const suma = numero1 + numero2;
-            valorsuma.textContent = suma;
-            num1.value = "";
-            num2.value = "";
-        } else {
-            valorsuma.textContent = "Digitos invalidos";
-        }
-    });
-});
+function multiplicar() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var resultado = num1 * num2;
+    document.getElementById("resultado").textContent = resultado;
+}
 
+function dividir() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    if (num2 !== 0) {
+        var resultado = num1 / num2;
+        document.getElementById("resultado").textContent = resultado;
+    } else {
+        document.getElementById("resultado").textContent = "Error: División por cero.";
+    }
+}
