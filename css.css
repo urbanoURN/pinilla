@@ -1,55 +1,41 @@
+
 body {
-    background-color: #e0f2e9; 
+    background-color: #f2f2f2; 
     font-family: Arial, sans-serif;
-    text-align: center;
 }
+
 
 #cuerpo_suma {
-    background-color: #c4e9c2; 
-    border-radius: 10px;
+    background-color: #ffffff; 
+    width: 400px;
+    margin: 0 auto;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 400px;
-}
-
-h3 {
-    color: #258246; 
-}
-
-.bloque {
-    margin: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #258246; 
+    border: 1px solid #ccc; 
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
-button#botoncal {
-    background-color: #258246; 
-    color: white;
-    border: none;
+input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+}
+
+button {
+    background-color: #666; 
+    color: #fff; 
     padding: 10px 20px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-button#botoncal:hover {
-    background-color: #cd104c; 
-}
-p {
-    margin-top: 10px;
+button:hover {
+    background-color: #444; 
 }
 
-#valor {
-    color: #258246; 
-}
 
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+}
