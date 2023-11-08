@@ -12,6 +12,7 @@ body {
     padding: 20px;
     border: 1px solid #ccc; 
     border-radius: 5px;
+    
 }
 
 input[type="number"] {
@@ -19,6 +20,8 @@ input[type="number"] {
     padding: 5px;
     border: 1px solid #ccc; 
     border-radius: 3px;
+    width: 25%;
+    padding: 13px 24px;
 }
 
 button {
@@ -42,7 +45,10 @@ button:hover {
 
 #suma label {
     color: #033b35;
-        display: block;
-        font-size: 0.95em;
-        margin-bottom: 5px;
+    display: block;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    padding: 13px 24px;
 }
+
+

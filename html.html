@@ -14,22 +14,23 @@
 
             <h3>GRAN CALCULADORA PERO SOLO SUMA</h3>
 
-                <label for="numero1"></label>
-                <input type="number" name="numero1" id="numero1" required tabindex="1" pattern="[0-9]{}">
-                <h3>+</h3>
-                <input type="number" name="numero2" id="numero2" required tabindex="2" pattern="[0-9]{}">
-                
-                <label for="botones">
-                <button type="button" onclick="realizarOperacion('sumar')">Sumar</button>
-                <button type="button" onclick="realizarOperacion('restar')">Restar</button>
-                <button type="button" onclick="realizarOperacion('multiplicar')">Multiplicar</button>
-                <button type="button" onclick="realizarOperacion('dividir')">Dividir</button>
-                </label>
+                <div class="input">
+                    <input type="number" name="numero1" id="numero1" required tabindex="1" pattern="[0-9]{}">
+                    <h3>+</h3>
+                    <input type="number" name="numero2" id="numero2" required tabindex="2" pattern="[0-9]{}">
+                </div>
+
+                <div class="botones">
+                    <button type="button" onclick="realizarOperacion('sumar')">Sumar</button>
+                    <button type="button" onclick="realizarOperacion('restar')">Restar</button>
+                    <button type="button" onclick="realizarOperacion('multiplicar')">Multiplicar</button>
+                    <button type="button" onclick="realizarOperacion('dividir')">Dividir</button>
+                </div>
                 
 
                 <p>Resultado: <span id="resultado"></span></p>
 
-            </div>
+            
 
             <script src="js.js"></script>
 
