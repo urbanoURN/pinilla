@@ -5,6 +5,11 @@ body {
 }
 
 
+h3 {
+    color: #c1a2a2;
+}
+
+
 #cuerpo_suma {
     background-color: #ffffff; 
     width: 400px;
@@ -15,6 +20,7 @@ body {
     
 }
 
+
 input[type="number"] {
     width: 80px;
     padding: 5px;
@@ -22,6 +28,17 @@ input[type="number"] {
     border-radius: 3px;
     width: 25%;
     padding: 13px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 button {
